@@ -6,8 +6,12 @@ def oxford_comma(array)
   elsif length == 2
     new_array = array.join(" and ")
   elsif length == 3
-    
-    new_array = new_array.join
+    counter = 0
+    until counter = length - 2
+      new_array[counter] << (", ")
+      counter += 1
+    end
+    new_array[-2] << ("and ")
   else
     new_array
   end
