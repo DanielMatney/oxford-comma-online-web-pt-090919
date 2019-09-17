@@ -7,7 +7,7 @@ def oxford_comma(array)
     new_array = array.join(" and ")
   elsif length == 3
     counter = 0
-    until counter = length - 1
+    until counter == length - 1
       new_array[counter] << (", ")
       counter += 1
     end
