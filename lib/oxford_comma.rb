@@ -15,7 +15,7 @@ def oxford_comma(array)
     new_array = new_array.join
   else
     counter = 0
-    until counter = length - 1
+    until counter == length - 1
       new_array[counter] << (", ")
       counter += 1
     end
