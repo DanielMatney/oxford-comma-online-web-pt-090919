@@ -12,6 +12,7 @@ def oxford_comma(array)
       counter += 1
     end
     new_array[-2] << ("and ")
+    new_array = new_array.join
   else
     new_array
   end
